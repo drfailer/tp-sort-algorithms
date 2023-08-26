@@ -242,9 +242,9 @@ int main(int, char**)
 
   generate_random_vector(TestVec, 1000000);
 
-  std::cout << "time for tri_sel: " << measure(tri_sel, TestVec) / 1000000.0 <<  "ms" << std::endl;
-  std::cout << "time for tri_insert: " << measure(tri_sel, TestVec) / 1000000.0 <<  "ms" << std::endl;
-  std::cout << "time for tri_insert_inplace: " << measure(tri_sel, TestVec) / 1000000.0 << "ms" << std::endl;
-  std::cout << "time for quicksort: " << measure(tri_sel, TestVec) / 1000000.0 <<  "ms" << std::endl;
+  std::cout << "time for tri_sel: " << measure(tri_sel, TestVec) / 1000000.0 <<  "s" << std::endl;
+  std::cout << "time for tri_insert: " << measure(tri_sel, TestVec) / 1000000.0 <<  "s" << std::endl;
+  std::cout << "time for tri_insert_inplace: " << measure(tri_sel, TestVec) / 1000000.0 << "s" << std::endl;
+  std::cout << "time for quicksort: " << measure(tri_sel, TestVec) / 1000000.0 <<  "s" << std::endl;
   return 0;
 }
