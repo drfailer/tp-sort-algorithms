@@ -142,8 +142,7 @@ std::vector<int> tri_insert(std::vector<int> L) {
   for (size_t i = 0; i < L.size(); ++i) {
     insert(L[i], tmp);
   }
-  std::copy(tmp.begin(), tmp.end(), L.begin());
-  return L;
+  return tmp;
 }
 
 /**
@@ -228,6 +227,8 @@ unsigned long measure(std::function<std::vector<int>(std::vector<int>)> sort, st
 
 int main(int, char**)
 {
+  std::chrono::steady_clock::time_point begin;
+  std::chrono::steady_clock::time_point end;
   std::vector<int> TestVec;
 
 
